@@ -8,7 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Saber Khakipour — Filmmaker & Visual Essay Artist</title>
+
 <link rel="icon" type="image/png" href="favicon.png">
+
 <meta name="description" content="Saber Khakipour — filmmaker and video editor creating short visual essay films inspired by classical music.">
 
 <style>
@@ -33,6 +35,43 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+    display: flex;
+    gap: 18px;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #333;
+    color: #eeeeeb;
+    transform: translateY(-2px);
+}
+
+.social-links svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
 }
 
 
@@ -93,7 +132,6 @@ nav a:hover {
     align-items: flex-start;
     padding: 150px 7% 9%;
     position: relative;
-
     background: #e8e8e5;
 }
 
@@ -459,6 +497,21 @@ footer {
         line-height: 2.2;
     }
 
+    .social-links {
+        gap: 14px;
+        margin-top: 28px;
+    }
+
+    .social-links a {
+        width: 34px;
+        height: 34px;
+    }
+
+    .social-links svg {
+        width: 16px;
+        height: 16px;
+    }
+
 }
 
 </style>
@@ -526,6 +579,54 @@ footer {
         <a href="#films" class="watch-button">
             Watch Films ↓
         </a>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="social-links">
+
+            <!-- YouTube -->
+            <a
+                href="https://www.youtube.com/@SaberJourneys"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.9V8.1l6.5 3.9-6.5 3.9z"/>
+                </svg>
+
+            </a>
+
+
+            <!-- Instagram -->
+            <a
+                href="https://www.instagram.com/sabersosuper90/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6.5a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+                </svg>
+
+            </a>
+
+
+            <!-- X -->
+            <a
+                href="https://x.com/sabersosuper90"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.1L6.7 22H3.6l7.3-8.4L2.8 2h6.4l4.4 5.6L18.9 2zm-1.1 17.9h1.7L8.2 4H6.4l11.4 15.9z"/>
+                </svg>
+
+            </a>
+
+        </div>
 
     </div>
 
