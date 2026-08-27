@@ -385,18 +385,41 @@ section {
     background: #e8e8e5;
 }
 
+.filmography-table {
+    width: 100%;
+}
+
 .film-row {
     display: grid;
-    grid-template-columns: 70px 1fr 100px;
-    gap: 30px;
+    grid-template-columns: 60px minmax(0, 1fr) 180px 80px 80px;
+    gap: 25px;
     padding: 21px 0;
     border-bottom: 1px solid #ccccca;
     font-family: Arial, sans-serif;
     font-size: 13px;
+    align-items: baseline;
+}
+
+.film-row.header {
+    padding-top: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #999996;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #686868;
 }
 
 .film-number {
     opacity: 0.5;
+}
+
+.film-role {
+    opacity: 0.7;
+}
+
+.film-year {
+    opacity: 0.7;
 }
 
 .film-type {
@@ -498,9 +521,14 @@ footer a:hover {
     }
 
     .film-row {
-        grid-template-columns: 45px 1fr 55px;
-        gap: 12px;
-        font-size: 11px;
+        grid-template-columns: 35px minmax(0, 1fr) 110px 55px 45px;
+        gap: 8px;
+        font-size: 10px;
+    }
+
+    .film-row.header {
+        font-size: 8px;
+        letter-spacing: 0.8px;
     }
 
     footer {
@@ -992,209 +1020,395 @@ footer a:hover {
     </div>
 
 
-    <div>
+    <div class="filmography-table">
+
+        <!-- COLUMN HEADINGS -->
+
+        <div class="film-row header">
+
+            <span>No.</span>
+
+            <span>Title</span>
+
+            <span>Role</span>
+
+            <span>Year</span>
+
+            <span class="film-type">Type</span>
+
+        </div>
+
+
+        <!-- 01 -->
 
         <div class="film-row">
             <span class="film-number">01</span>
-            <span>Happy Birthday to you Great Beethoven</span>
+            <span>Happy Birthday to You, Great Beethoven</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 02 -->
 
         <div class="film-row">
             <span class="film-number">02</span>
             <span>Moonlight Sonata by Beethoven: First Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
 
+
+        <!-- 03 -->
+
         <div class="film-row">
             <span class="film-number">03</span>
-            <span>Beethoven's last work</span>
+            <span>Beethoven's Last Work</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 04 -->
 
         <div class="film-row">
             <span class="film-number">04</span>
             <span>Piano Concerto No. 2 by Beethoven: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 05 -->
 
         <div class="film-row">
             <span class="film-number">05</span>
             <span>Yanni's Reflections of Passion</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 06 -->
 
         <div class="film-row">
             <span class="film-number">06</span>
             <span>Nocturne No. 14 in G major by John Field</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 07 -->
 
         <div class="film-row">
             <span class="film-number">07</span>
             <span>Beethoven's Symphony No. 5: Fourth Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 08 -->
 
         <div class="film-row">
             <span class="film-number">08</span>
             <span>Beethoven's Piano Concerto No. 5: Second Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 09 -->
 
         <div class="film-row">
             <span class="film-number">09</span>
             <span>Beethoven's Piano Concerto No. 5: Third Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 10 -->
 
         <div class="film-row">
             <span class="film-number">10</span>
             <span>Beethoven's Symphony No. 4: First Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 11 -->
 
         <div class="film-row">
             <span class="film-number">11</span>
             <span>Beethoven's Symphony No. 3: Second Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 12 -->
 
         <div class="film-row">
             <span class="film-number">12</span>
             <span>Beethoven's Symphony No. 3: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 13 -->
 
         <div class="film-row">
             <span class="film-number">13</span>
             <span>Beethoven's Symphony No. 7: Second Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 14 -->
 
         <div class="film-row">
             <span class="film-number">14</span>
             <span>Beethoven's Symphony No. 7: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 15 -->
 
         <div class="film-row">
             <span class="film-number">15</span>
             <span>Beethoven's Piano Concerto No. 3: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 16 -->
 
         <div class="film-row">
             <span class="film-number">16</span>
             <span>Beethoven's Piano Concerto No. 3: Second Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 17 -->
 
         <div class="film-row">
             <span class="film-number">17</span>
             <span>Beethoven's Piano Concerto No. 4: Second Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 18 -->
 
         <div class="film-row">
             <span class="film-number">18</span>
             <span>Beethoven's Piano Concerto No. 4: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 19 -->
 
         <div class="film-row">
             <span class="film-number">19</span>
             <span>Beethoven's Symphony No. 6: First Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 20 -->
 
         <div class="film-row">
             <span class="film-number">20</span>
             <span>Beethoven's Symphony No. 6: Third Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 21 -->
 
         <div class="film-row">
             <span class="film-number">21</span>
             <span>Beethoven's Symphony No. 6: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 22 -->
 
         <div class="film-row">
             <span class="film-number">22</span>
             <span>Beethoven's Symphony No. 6: Fourth Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 23 -->
 
         <div class="film-row">
             <span class="film-number">23</span>
             <span>Nostalgia by Yanni</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 24 -->
 
         <div class="film-row">
             <span class="film-number">24</span>
             <span>One Man's Dream by Yanni</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 25 -->
 
         <div class="film-row">
             <span class="film-number">25</span>
             <span>Until the Last Moment by Yanni</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 26 -->
 
         <div class="film-row">
             <span class="film-number">26</span>
             <span>Santorini by Yanni</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 27 -->
 
         <div class="film-row">
             <span class="film-number">27</span>
             <span>If I Could Tell You by Yanni</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 28 -->
 
         <div class="film-row">
             <span class="film-number">28</span>
             <span>Maestro Yanni Returns</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
 
+
+        <!-- 29 -->
+
         <div class="film-row">
             <span class="film-number">29</span>
-            <span>My tribute video for Beethoven's birthday (sneak preview)</span>
+            <span>My Tribute Video for Beethoven's Birthday (Sneak Preview)</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 30 -->
 
         <div class="film-row">
             <span class="film-number">30</span>
             <span>Sonata Pathétique by Beethoven: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 31 -->
 
         <div class="film-row">
             <span class="film-number">31</span>
             <span>Appassionata by Beethoven: Final Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 32 -->
 
         <div class="film-row">
             <span class="film-number">32</span>
             <span>Hammerklavier by Beethoven: First Movement</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
 
+
+        <!-- 33 -->
+
         <div class="film-row">
             <span class="film-number">33</span>
-            <span>Official Trailer: Beethoven’s Birthday Symphony No. 9 Celebration – Dec 16 Premiere</span>
+            <span>Official Trailer: Beethoven's Birthday Symphony No. 9 Celebration – Dec 16 Premiere</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
+
+
+        <!-- 34 -->
 
         <div class="film-row">
             <span class="film-number">34</span>
             <span>Happy Birthday to Beethoven | A Visual Tribute</span>
+            <span class="film-role">Filmmaker · Editor</span>
+            <span class="film-year">2025</span>
             <span class="film-type">Film</span>
         </div>
 
